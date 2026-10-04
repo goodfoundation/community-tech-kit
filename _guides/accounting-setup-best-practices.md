@@ -1,7 +1,7 @@
 ---
 title: Accounting Setup Best Practices
 description: >-
-  Set up your community organization's books the right way from day one —
+  Set up your community organization's books the right way from day one -
   chart of accounts, fund tracking, reconciliations and controls a small
   team can actually keep.
 category: Accounting
@@ -23,13 +23,13 @@ way to lose grant eligibility, board trust and your 501(c)(3) status.
 - One operating account is enough to start; add a savings account only when
   you actually hold restricted funds.
 - Use a debit card, never a personal credit card, for organizational
-  spending — and reimburse volunteers with documentation, never cash.
+  spending - and reimburse volunteers with documentation, never cash.
 - Order a duplicate statement to go to a second person (see [controls](#build-basic-controls)).
 
 ## Build a simple chart of accounts
 
 A chart of accounts is just the list of categories your money flows
-through. Resist the urge to make it detailed — ten income accounts and
+through. Resist the urge to make it detailed - ten income accounts and
 twelve expense accounts is plenty for most community organizations.
 
 | Type | Keep it simple | Example |
@@ -52,7 +52,7 @@ Two conventions pay off for years:
 ## Record everything, reconcile monthly
 
 Reconciliation is the habit that makes every other practice possible. Pick
-a fixed day each month — the 15th works well — and:
+a fixed day each month - the 15th works well - and:
 
 1. Match every bank transaction to a receipt or invoice.
 2. Confirm your book balance matches the bank statement exactly.
@@ -94,6 +94,6 @@ running with minimal weekly effort.
 Bring in a CPA when you: take your first restricted grant, hire your first
 employee, or approach your first annual filing (Form 990 in the US). A few
 hours of professional review each year is far cheaper than reconstructing
-three years of books — and it's exactly what our
+three years of books - and it's exactly what our
 [accounting workshops](mailto:contact@goodsoftware.foundation) can help you
 prepare for.

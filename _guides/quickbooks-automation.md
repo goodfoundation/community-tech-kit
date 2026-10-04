@@ -8,8 +8,8 @@ icon: gears
 date: 2026-10-04
 ---
 
-QuickBooks keeps most small organizations' books, but the default workflow —
-typing every transaction by hand — quietly kills volunteer motivation. This
+QuickBooks keeps most small organizations' books, but the default workflow -
+typing every transaction by hand - quietly kills volunteer motivation. This
 guide covers the built-in automation QuickBooks already offers, then the
 scriptable extras for teams comfortable with a bit of code.
 
@@ -23,7 +23,7 @@ automatically. This is the foundation; everything below builds on it.
 3. Set the connection's refresh to run automatically (QuickBooks Online does
    this by default).
 
-Never accept a feed transaction without categorizing it — the point of
+Never accept a feed transaction without categorizing it - the point of
 automation below is that you stop doing this one at a time.
 
 ## Rules: your first 80%
@@ -59,13 +59,13 @@ generating invoices are a classic audit finding.
 QuickBooks Online's receipt capture lets you photograph or email receipts
 and have them matched to bank transactions automatically. Forward receipts
 to a dedicated address (available on Plus and higher), or snap them in the
-mobile app at the time of purchase — then the monthly reconciliation is a
+mobile app at the time of purchase - then the monthly reconciliation is a
 review, not a data-entry session.
 
 ## Integrations worth turning on
 
 - **Payment processors** (Stripe, Square, PayPal): official sync apps post
-  donations and fees to QuickBooks automatically — no more re-keying
+  donations and fees to QuickBooks automatically - no more re-keying
   donation batches.
 - **Payroll** (Gusto, QuickBooks Payroll): journals post on each run.
 - **Expense tools** (Hubdoc, Ramp): receipts arrive categorized.
@@ -77,19 +77,19 @@ verify the postings for a full month before trusting them.
 
 For teams comfortable with code, QuickBooks exposes a REST API that makes
 bulk work trivial. Our
-[community-tech-tools repository](https://github.com/goodfoundation)
+[community-tech-kit repository](https://github.com/goodfoundation/community-tech-kit)
 includes starter scripts for common jobs:
 
-- **Monthly category report** — pull all transactions, group by class, and
+- **Monthly category report** - pull all transactions, group by class, and
   email the board a one-pager.
-- **Donation reconciliation** — match a Stripe payout report to QuickBooks
+- **Donation reconciliation** - match a Stripe payout report to QuickBooks
   deposits and flag anything unexplained.
-- **Year-end export** — archive every transaction and attachment to a
+- **Year-end export** - archive every transaction and attachment to a
   dated folder for the accountant or auditor.
 
 > Automation should remove keystrokes, not oversight. Keep the monthly
 > reconciliation and the two-person controls from our
-> [accounting setup guide]({{ '/guides/accounting-setup-best-practices/' | relative_url }}) — the
+> [accounting setup guide]({{ '/guides/accounting-setup-best-practices/' | relative_url }}) - the
 > scripts above just feed them cleaner data.
 
 ## A weekly rhythm that fits in 15 minutes
@@ -100,5 +100,5 @@ includes starter scripts for common jobs:
    fired, clear exceptions.
 
 If any step regularly takes longer, it's a candidate for a new rule,
-recurring transaction or script — tell us about it and we may add the
+recurring transaction or script - tell us about it and we may add the
 recipe here.

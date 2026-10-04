@@ -9,28 +9,29 @@
   url: https://www.techsoup.org
   description: >-
     The gateway to hundreds of donated and deeply discounted products from
-    major vendors. Start here — many of the deals below are fulfilled through
+    major vendors. Start here - many of the deals below are fulfilled through
     a TechSoup validation.
   eligibility: Registered 501(c)(3) (or equivalent outside the US)
 
 - name: Google Workspace for Nonprofits
-  category: Productivity
+  category: [Productivity, Communication]
   deal: Free
   icon: mail
-  url: https://www.google.com/nonprofits/workspace/
+  url: https://www.google.com/nonprofits/
   description: >-
     Gmail on your own domain, Docs, Drive, Calendar and Meet for up to 2,000
     users at no cost. Paid Business tiers are discounted ~75%.
   eligibility: Nonprofits verified via Google for Nonprofits
 
 - name: Microsoft Tech for Social Impact
-  category: Productivity
+  category: [Productivity, Communication]
   deal: Free & discounted
   icon: sprout
-  url: https://www.microsoft.com/en-us/nonprofits/microsoft-365
+  url: https://www.microsoft.com/en-us/nonprofits/offers-for-nonprofits
   description: >-
-    Free Microsoft 365 Business Premium for up to 10 users, heavily discounted
-    grants beyond that, plus Power Platform and Dynamics 365 nonprofit pricing.
+    Microsoft 365 Business Basic is free for up to 300 users - Teams, Outlook
+    email on your own domain, and Office on the Web - with discounted
+    upgrades and Power Platform nonprofit offers beyond that.
   eligibility: Registered nonprofits with TechSoup validation
 
 - name: Canva for Nonprofits
@@ -39,7 +40,7 @@
   icon: sprout
   url: https://www.canva.com/canva-for-nonprofits/
   description: >-
-    Canva Pro free for eligible nonprofits — brand kits, premium templates,
+    Canva Pro free for eligible nonprofits - brand kits, premium templates,
     background removal and a whole asset library for flyers, social posts and
     reports.
   eligibility: Registered nonprofits
@@ -59,32 +60,45 @@
   category: Communication
   deal: Discounted
   icon: check
-  url: https://explore.zoom.us/en/nonprofits/
+  url: https://www.zoom.com/en/zoom-cares/#zoomfornonprofits
   description: >-
-    Discounted Zoom Workplace plans through TechSoup — large meeting
-    capacities, cloud recording and webinars at nonprofit pricing.
+    Nonprofits with operating budgets of $10 million or less 
+    are able to purchase select Zoom products at 50% off.
   eligibility: TechSoup-validated organizations
 
-- name: QuickBooks Premier Nonprofit
+- name: QuickBooks Online for Nonprofits
   category: Accounting
   deal: Discounted
   icon: wallet
-  url: https://www.techsoup.org/products/quickbooks-premier-nonprofit
+  url: https://page.techsoup.org/intuit-quickbooks-online-nonprofits
   description: >-
     Intuit QuickBooks with a nonprofit chart of accounts, donation and donor
-    tracking, and Form 990 reporting support — at a TechSoup discount.
+    tracking, and Form 990 reporting support - at a TechSoup discount.
   eligibility: TechSoup-validated organizations
 
-- name: Wave Accounting
-  category: Accounting
-  deal: Free tier
-  icon: ledger
-  url: https://www.waveapps.com
+- name: Claude for Nonprofits
+  category: AI
+  deal: Up to 75% off
+  icon: spark
+  url: https://claude.com/solutions/nonprofits
   description: >-
-    Free double-entry accounting, invoicing and receipt scanning. A solid
-    zero-cost option for very small organizations, though nonprofit fund
-    accounting is limited.
-  eligibility: Anyone (US & Canada)
+    Anthropic's nonprofit program offers up to 75% off Claude Team and
+    Enterprise plans, plus connectors to nonprofit platforms like Blackbaud,
+    Candid and Benevity, and a free AI Fluency for Nonprofits course
+    developed with GivingTuesday.
+  eligibility: Registered 501(c)(3) (or international equivalent)
+
+- name: OpenAI for Nonprofits
+  category: AI
+  deal: Up to 75% off
+  icon: spark
+  url: https://openai.com/index/introducing-openai-for-nonprofits/
+  description: >-
+    ChatGPT Business and Enterprise at up to 75% off for eligible
+    nonprofits - a shared workspace, admin controls, custom GPTs and
+    OpenAI's enterprise privacy and security standards. Apply through
+    OpenAI's validation partner.
+  eligibility: Registered nonprofits
 
 - name: Notion for Nonprofits
   category: Productivity
@@ -94,14 +108,4 @@
   description: >-
     Docs, wikis, databases and project tracking in one place. Eligible
     nonprofits get 50% off the Plus plan.
-  eligibility: Registered nonprofits
-
-- name: Figma Professional
-  category: Design
-  deal: Free upgrade
-  icon: code
-  url: https://www.figma.com/nonprofits/
-  description: >-
-    Free Figma Professional for verified nonprofits — useful if a volunteer
-    designer helps with your website, print or social assets.
   eligibility: Registered nonprofits

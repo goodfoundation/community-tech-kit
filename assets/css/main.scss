@@ -2,7 +2,7 @@
 ---
 
 /* ==========================================================================
-   Community Tech Kit — design tokens
+   Community Tech Kit - design tokens
    ========================================================================== */
 
 :root {
@@ -534,6 +534,7 @@ ul {
 
 .card__icon {
   display: inline-flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   width: 52px;
@@ -614,6 +615,17 @@ ul {
     border: 1px solid var(--line);
     border-radius: 999px;
     padding: 5px 11px;
+  }
+}
+
+.card__top .tags {
+  min-width: 0;
+  margin-bottom: 0;
+  justify-content: flex-end;
+
+  li {
+    font-size: 0.66rem;
+    padding: 4px 9px;
   }
 }
 

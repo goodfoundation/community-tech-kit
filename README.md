@@ -33,4 +33,4 @@ _includes/  _layouts/    Shared header, footer, icons, page layouts
 - **Add a software deal:** append an entry to `_data/discounts.yml`.
 - **Add a guide:** create a markdown file in `_guides/` with `title`,
   `description`, `category`, `icon` and `date` front matter.
-- Everything is plain markdown/YAML — no build tooling beyond Jekyll.
+- Everything is plain markdown/YAML - no build tooling beyond Jekyll.

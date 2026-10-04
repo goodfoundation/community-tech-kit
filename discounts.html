@@ -2,7 +2,7 @@
 layout: default
 title: Free & Discounted Software
 description: >-
-  Free and discounted software that community organizations qualify for —
+  Free and discounted software that community organizations qualify for -
   productivity, design, communication and accounting tools, with eligibility
   notes for each.
 permalink: /discounts/
@@ -17,7 +17,7 @@ permalink: /discounts/
     </h1>
     <p class="page-hero__lede" data-reveal data-reveal-delay="2">
       These offers come straight from the vendors' own nonprofit programs.
-      Start with TechSoup — a single validation unlocks most of the rest.
+      Start with TechSoup - a single validation unlocks most of the rest.
     </p>
   </div>
 </section>
@@ -26,7 +26,12 @@ permalink: /discounts/
   <div class="wrap">
     <div class="filter" data-filter>
       <button class="filter__btn is-active" type="button" data-filter-value="all">All</button>
-      {%- assign categories = site.data.discounts | map: "category" | uniq -%}
+      {%- assign all_categories = "" | split: "|" -%}
+      {%- for item in site.data.discounts -%}
+        {%- assign item_cats = item.category | join: "|" | split: "|" -%}
+        {%- assign all_categories = all_categories | concat: item_cats -%}
+      {%- endfor -%}
+      {%- assign categories = all_categories | uniq -%}
       {%- for category in categories %}
       <button class="filter__btn" type="button" data-filter-value="{{ category }}">{{ category }}</button>
       {%- endfor %}
@@ -34,10 +39,15 @@ permalink: /discounts/
 
     <div class="cards" data-filterable>
       {%- for item in site.data.discounts %}
-      <article class="card" data-filter-category="{{ item.category }}" data-reveal>
+      <article class="card" data-filter-category="{{ item.category | join: '|' }}" data-reveal>
         <div class="card__top">
           <span class="card__icon">{% include icon.html name=item.icon %}</span>
-          <span class="badge">{{ item.category }}</span>
+          {%- assign item_cats = item.category | join: "|" | split: "|" -%}
+          <ul class="tags">
+            {%- for category in item_cats %}
+            <li class="badge">{{ category }}</li>
+            {%- endfor %}
+          </ul>
         </div>
         <h3 class="card__title">{{ item.name }}</h3>
         <p class="deal">{{ item.deal }}</p>
@@ -53,7 +63,7 @@ permalink: /discounts/
     </div>
 
     <p class="footnote" style="margin-top: 28px;">
-      Deals change often — always confirm current terms on the vendor's page.
+      Deals change often - always confirm current terms on the vendor's page.
       Listing here is not a sponsorship; we accept no affiliate commissions.
     </p>
   </div>
@@ -71,7 +81,8 @@ permalink: /discounts/
         btn.classList.add("is-active");
         var value = btn.getAttribute("data-filter-value");
         cards.forEach(function (card) {
-          var match = value === "all" || card.getAttribute("data-filter-category") === value;
+          var cats = card.getAttribute("data-filter-category").split("|");
+          var match = value === "all" || cats.indexOf(value) !== -1;
           card.style.display = match ? "" : "none";
           card.removeAttribute("data-reveal");
           card.classList.add("is-visible");

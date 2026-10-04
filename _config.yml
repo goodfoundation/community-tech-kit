@@ -12,6 +12,7 @@ baseurl: "/community-tech-kit"
 
 email: contact@goodsoftware.foundation
 github_org: goodfoundation
+github_repo: goodfoundation/community-tech-kit
 
 logo: /assets/ctk-mark.svg
 
