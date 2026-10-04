@@ -145,6 +145,14 @@ ul {
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 14px;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .eyebrow--back {
@@ -682,6 +690,28 @@ ul {
   margin: 24px 0 0;
   color: var(--ink-soft);
   font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+
+  a {
+    color: var(--accent);
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.value-block {
+  p {
+    a {
+      color: var(--accent);
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .value-block {

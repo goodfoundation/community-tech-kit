@@ -2,23 +2,25 @@
 - name: Software deals
   icon: gift
   blurb: >-
-    Free and discounted software that community organizations actually
-    qualify for, with notes on eligibility and how to claim each offer.
+    A directory of free and discounted software programs offered by major
+    vendors, with eligibility requirements and application notes for each.
   link: /discounts/
   link_label: Browse the directory
 
 - name: Accounting best practices
   icon: wallet
   blurb: >-
-    Set up your books the right way from day one - chart of accounts,
-    fund tracking, reconciliations and the controls small teams can keep.
+    A guide to setting up organizational books from day one: chart of
+    accounts, fund tracking, monthly reconciliation, and financial controls
+    suited to volunteer-run teams.
   link: /guides/accounting-setup-best-practices/
   link_label: Read the guide
 
 - name: QuickBooks automation
   icon: gears
   blurb: >-
-    Stop re-typing bank transactions. Rules, recurring entries, bank feeds
-    and scripts that keep QuickBooks in shape with minutes a week.
+    Rules, recurring transactions, bank feeds, and scripts that reduce
+    manual data entry and keep QuickBooks current with a short weekly
+    review.
   link: /guides/quickbooks-automation/
   link_label: Read the guide

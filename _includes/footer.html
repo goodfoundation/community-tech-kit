@@ -18,6 +18,7 @@
           <li><a href="{{ '/discounts/' | relative_url }}">Software deals</a></li>
           <li><a href="{{ '/guides/' | relative_url }}">Guides</a></li>
           <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ site.support_url }}">Support the project</a></li>
         </ul>
       </div>
       <div>
@@ -32,7 +33,7 @@
   </div>
 
   <div class="wrap site-footer__legal">
-    <p>&copy; {{ site.time | date: "%Y" }} Good Software Foundation. All rights reserved.</p>
+    <p>&copy; {{ site.time | date: "%Y" }} <a href="{{ site.foundation_url }}">Good Software Foundation</a>. All rights reserved.</p>
     <p>Content licensed CC BY 4.0 &middot; Code licensed MIT.</p>
   </div>
 </footer>

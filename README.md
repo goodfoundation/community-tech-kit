@@ -2,7 +2,7 @@
 
 Practical technology resources for community organizations: free and
 discounted software, accounting best practices, and QuickBooks automation
-guides. A [Good Software Foundation](https://goodfoundation.github.io)
+guides. A [Good Software Foundation](https://goodsoftware.foundation)
 project.
 
 The site is a static Jekyll build deployed to GitHub Pages.
