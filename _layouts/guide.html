@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <a class="eyebrow eyebrow--back" href="{{ '/guides/' | relative_url }}" data-reveal>
+      {% include icon.html name="arrow-left" %} All guides
+    </a>
+    <h1 class="page-hero__title" data-reveal data-reveal-delay="1">{{ page.title }}</h1>
+    {%- if page.description -%}
+    <p class="page-hero__lede" data-reveal data-reveal-delay="2">{{ page.description }}</p>
+    {%- endif -%}
+    <div class="guide-meta" data-reveal data-reveal-delay="2">
+      {%- if page.category -%}<span class="badge">{{ page.category }}</span>{%- endif -%}
+      {%- if page.date -%}
+      <span class="guide-meta__date">Updated {{ page.date | date: "%B %Y" }}</span>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <article class="prose">
+      {{ content }}
+    </article>
+
+    <aside class="prose-footnote">
+      <p>
+        Found a mistake or have something to add?
+        <a href="mailto:{{ site.email }}">Email us</a> or open an issue on
+        <a href="https://github.com/{{ site.github_org }}" rel="noopener">GitHub</a>.
+      </p>
+    </aside>
+  </div>
+</section>

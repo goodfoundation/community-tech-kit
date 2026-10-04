@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__brand">
+      <img
+        src="{{ '/assets/ctk-mark.svg' | relative_url }}"
+        alt="{{ site.title }}"
+        width="40"
+        height="34"
+      />
+      <p class="site-footer__brandname">{{ site.title }}</p>
+      <p class="site-footer__desc">{{ site.description }}</p>
+    </div>
+
+    <div class="site-footer__cols">
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="{{ '/discounts/' | relative_url }}">Software deals</a></li>
+          <li><a href="{{ '/guides/' | relative_url }}">Guides</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          {%- for item in site.social %}
+          <li><a href="{{ item.url }}" rel="noopener">{{ item.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap site-footer__legal">
+    <p>&copy; {{ site.time | date: "%Y" }} Good Software Foundation. All rights reserved.</p>
+    <p>Content licensed CC BY 4.0 &middot; Code licensed MIT.</p>
+  </div>
+</footer>

@@ -1,0 +1,49 @@
+title: Community Tech Kit
+tagline: Practical tech resources for community organizations
+description: >-
+  Community Tech Kit is a Good Software Foundation project that collects free
+  and discounted software, accounting best practices, and automation guides
+  for small non-profits and community organizations.
+
+# GitHub Pages project site: served from /community-tech-kit.
+# If you use a custom domain or user site instead, set baseurl to "".
+url: "https://goodfoundation.github.io"
+baseurl: "/community-tech-kit"
+
+email: contact@goodsoftware.foundation
+github_org: goodfoundation
+
+logo: /assets/ctk-mark.svg
+
+social:
+  - name: GitHub
+    url: https://github.com/goodfoundation
+  - name: Email
+    url: mailto:contact@goodsoftware.foundation
+
+collections:
+  guides:
+    output: true
+    permalink: /guides/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: guide
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - serve.sh
+  - vendor
+  - .github

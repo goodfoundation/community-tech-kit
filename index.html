@@ -1,0 +1,115 @@
+---
+layout: default
+title: Community Tech Kit
+description: >-
+  Free and discounted software, accounting best practices, and QuickBooks
+  automation guides for community organizations. A Good Software Foundation
+  project.
+---
+
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <p class="eyebrow" data-reveal>A Good Software Foundation project</p>
+    <h1 class="hero__title" data-reveal data-reveal-delay="1">
+      Practical tech,<br />
+      <span class="hero__title-accent">for community teams.</span>
+    </h1>
+    <p class="hero__lede" data-reveal data-reveal-delay="2">
+      Small non-profits and community groups run on volunteers and tight
+      budgets. This kit collects the software deals you qualify for, the
+      bookkeeping habits that keep you audit-ready, and the automation that
+      buys your time back.
+    </p>
+    <div class="hero__actions" data-reveal data-reveal-delay="3">
+      <a class="btn btn--solid" href="{{ '/discounts/' | relative_url }}">
+        Browse software deals {% include icon.html name="arrow" %}
+      </a>
+      <a class="btn btn--ghost" href="{{ '/guides/' | relative_url }}">Read the guides</a>
+    </div>
+    <div class="hero__mark" data-reveal data-reveal-delay="4">
+      <img
+        src="{{ '/assets/ctk-mark.svg' | relative_url }}"
+        alt=""
+        aria-hidden="true"
+        width="46"
+        height="39"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="section section--muted" id="resources">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>What's inside</p>
+      <h2 class="section__title" data-reveal data-reveal-delay="1">
+        Three tracks, one kit.
+      </h2>
+      <p class="section__lede" data-reveal data-reveal-delay="2">
+        Start where the pain is worst. Everything here is written for a small
+        team with no dedicated IT staff.
+      </p>
+    </div>
+    <div class="cards">
+      {%- for resource in site.data.resources %}
+      <a class="card" href="{{ resource.link | relative_url }}" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <div class="card__top">
+          <span class="card__icon">{% include icon.html name=resource.icon %}</span>
+        </div>
+        <h3 class="card__title">{{ resource.name }}</h3>
+        <p class="card__desc">{{ resource.blurb }}</p>
+        <span class="card__link card__link--primary">
+          {{ resource.link_label }} {% include icon.html name="arrow" %}
+        </span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="principles">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow" data-reveal>How we curate</p>
+      <h2 class="section__title" data-reveal data-reveal-delay="1">
+        Anything we list, we would run ourselves.
+      </h2>
+    </div>
+    <div class="principles">
+      <div class="principle" data-reveal>
+        <span class="principle__icon">{% include icon.html name="check" %}</span>
+        <h3>Eligibility, verified</h3>
+        <p>Every deal is checked against the vendor's own nonprofit program page, not a coupon site.</p>
+      </div>
+      <div class="principle" data-reveal data-reveal-delay="1">
+        <span class="principle__icon">{% include icon.html name="shield" %}</span>
+        <h3>No data for access</h3>
+        <p>We never accept affiliate commissions or paid placement. Recommendations stay independent.</p>
+      </div>
+      <div class="principle" data-reveal data-reveal-delay="2">
+        <span class="principle__icon">{% include icon.html name="book" %}</span>
+        <h3>Plain-language guides</h3>
+        <p>Written for treasurers and program directors, not accountants or engineers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--muted">
+  <div class="wrap">
+    <div class="cta">
+      <h2 class="cta__title">Know a resource we're missing?</h2>
+      <p class="cta__lede">
+        This kit grows by suggestion. If your organization gets a deal, runs a
+        free tool, or solved an accounting headache, tell us and we'll add it.
+      </p>
+      <div class="cta__actions">
+        <a class="btn btn--solid" href="mailto:{{ site.email }}?subject=Suggest%20a%20resource">Suggest a resource</a>
+        <a class="btn btn--ghost" href="https://github.com/{{ site.github_org }}" rel="noopener">
+          {% include icon.html name="github" %} Contribute on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

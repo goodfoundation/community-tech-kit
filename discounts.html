@@ -1,0 +1,82 @@
+---
+layout: default
+title: Free & Discounted Software
+description: >-
+  Free and discounted software that community organizations qualify for —
+  productivity, design, communication and accounting tools, with eligibility
+  notes for each.
+permalink: /discounts/
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Software deals</p>
+    <h1 class="page-hero__title" data-reveal data-reveal-delay="1">
+      Pay nonprofit prices,<br />
+      <span class="hero__title-accent">or nothing at all.</span>
+    </h1>
+    <p class="page-hero__lede" data-reveal data-reveal-delay="2">
+      These offers come straight from the vendors' own nonprofit programs.
+      Start with TechSoup — a single validation unlocks most of the rest.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter" data-filter>
+      <button class="filter__btn is-active" type="button" data-filter-value="all">All</button>
+      {%- assign categories = site.data.discounts | map: "category" | uniq -%}
+      {%- for category in categories %}
+      <button class="filter__btn" type="button" data-filter-value="{{ category }}">{{ category }}</button>
+      {%- endfor %}
+    </div>
+
+    <div class="cards" data-filterable>
+      {%- for item in site.data.discounts %}
+      <article class="card" data-filter-category="{{ item.category }}" data-reveal>
+        <div class="card__top">
+          <span class="card__icon">{% include icon.html name=item.icon %}</span>
+          <span class="badge">{{ item.category }}</span>
+        </div>
+        <h3 class="card__title">{{ item.name }}</h3>
+        <p class="deal">{{ item.deal }}</p>
+        <p class="card__desc">{{ item.description }}</p>
+        <p class="footnote"><strong>Eligibility:</strong> {{ item.eligibility }}</p>
+        <div class="card__links">
+          <a class="card__link card__link--primary" href="{{ item.url }}" target="_blank" rel="noopener">
+            Visit {{ item.name }} {% include icon.html name="external" %}
+          </a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+    <p class="footnote" style="margin-top: 28px;">
+      Deals change often — always confirm current terms on the vendor's page.
+      Listing here is not a sponsorship; we accept no affiliate commissions.
+    </p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var wrap = document.querySelector("[data-filter]");
+    if (!wrap) return;
+    var buttons = wrap.querySelectorAll(".filter__btn");
+    var cards = document.querySelectorAll("[data-filterable] .card");
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        buttons.forEach(function (b) { b.classList.remove("is-active"); });
+        btn.classList.add("is-active");
+        var value = btn.getAttribute("data-filter-value");
+        cards.forEach(function (card) {
+          var match = value === "all" || card.getAttribute("data-filter-category") === value;
+          card.style.display = match ? "" : "none";
+          card.removeAttribute("data-reveal");
+          card.classList.add("is-visible");
+        });
+      });
+    });
+  })();
+</script>

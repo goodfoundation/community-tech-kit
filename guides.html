@@ -1,0 +1,44 @@
+---
+layout: default
+title: Guides
+description: >-
+  Plain-language guides on accounting setup, QuickBooks automation and other
+  practical systems for community organizations.
+permalink: /guides/
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Guides</p>
+    <h1 class="page-hero__title" data-reveal data-reveal-delay="1">
+      Systems your volunteers<br />
+      <span class="hero__title-accent">can actually keep.</span>
+    </h1>
+    <p class="page-hero__lede" data-reveal data-reveal-delay="2">
+      Step-by-step guides written for treasurers, program directors and
+      board members — no accounting degree or dev environment required.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cards">
+      {%- for guide in site.guides %}
+      <a class="card" href="{{ guide.url | relative_url }}" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <div class="card__top">
+          <span class="card__icon">{% include icon.html name=guide.icon %}</span>
+          {%- if guide.category -%}<span class="badge">{{ guide.category }}</span>{%- endif -%}
+        </div>
+        <h3 class="card__title">{{ guide.title }}</h3>
+        {%- if guide.description -%}
+        <p class="card__desc">{{ guide.description }}</p>
+        {%- endif -%}
+        <span class="card__link card__link--primary">
+          Read the guide {% include icon.html name="arrow" %}
+        </span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,107 @@
+# Discounted and free software for community organizations.
+# Each entry renders as a card on the /discounts/ page.
+# `category` is used for the filter chips; keep values consistent.
+
+- name: TechSoup
+  category: Marketplace
+  deal: Free to join
+  icon: gift
+  url: https://www.techsoup.org
+  description: >-
+    The gateway to hundreds of donated and deeply discounted products from
+    major vendors. Start here — many of the deals below are fulfilled through
+    a TechSoup validation.
+  eligibility: Registered 501(c)(3) (or equivalent outside the US)
+
+- name: Google Workspace for Nonprofits
+  category: Productivity
+  deal: Free
+  icon: mail
+  url: https://www.google.com/nonprofits/workspace/
+  description: >-
+    Gmail on your own domain, Docs, Drive, Calendar and Meet for up to 2,000
+    users at no cost. Paid Business tiers are discounted ~75%.
+  eligibility: Nonprofits verified via Google for Nonprofits
+
+- name: Microsoft Tech for Social Impact
+  category: Productivity
+  deal: Free & discounted
+  icon: sprout
+  url: https://www.microsoft.com/en-us/nonprofits/microsoft-365
+  description: >-
+    Free Microsoft 365 Business Premium for up to 10 users, heavily discounted
+    grants beyond that, plus Power Platform and Dynamics 365 nonprofit pricing.
+  eligibility: Registered nonprofits with TechSoup validation
+
+- name: Canva for Nonprofits
+  category: Design
+  deal: Free Pro
+  icon: sprout
+  url: https://www.canva.com/canva-for-nonprofits/
+  description: >-
+    Canva Pro free for eligible nonprofits — brand kits, premium templates,
+    background removal and a whole asset library for flyers, social posts and
+    reports.
+  eligibility: Registered nonprofits
+
+- name: GitHub for Nonprofits
+  category: Development
+  deal: Free Team plan
+  icon: github
+  url: https://github.com/nonprofit
+  description: >-
+    GitHub Team free of charge for eligible organizations, plus a 20% discount
+    on GitHub Enterprise Cloud. Everything Community Tech Kit publishes lives
+    on GitHub.
+  eligibility: Registered nonprofits
+
+- name: Zoom Workplace for Nonprofits
+  category: Communication
+  deal: Discounted
+  icon: check
+  url: https://explore.zoom.us/en/nonprofits/
+  description: >-
+    Discounted Zoom Workplace plans through TechSoup — large meeting
+    capacities, cloud recording and webinars at nonprofit pricing.
+  eligibility: TechSoup-validated organizations
+
+- name: QuickBooks Premier Nonprofit
+  category: Accounting
+  deal: Discounted
+  icon: wallet
+  url: https://www.techsoup.org/products/quickbooks-premier-nonprofit
+  description: >-
+    Intuit QuickBooks with a nonprofit chart of accounts, donation and donor
+    tracking, and Form 990 reporting support — at a TechSoup discount.
+  eligibility: TechSoup-validated organizations
+
+- name: Wave Accounting
+  category: Accounting
+  deal: Free tier
+  icon: ledger
+  url: https://www.waveapps.com
+  description: >-
+    Free double-entry accounting, invoicing and receipt scanning. A solid
+    zero-cost option for very small organizations, though nonprofit fund
+    accounting is limited.
+  eligibility: Anyone (US & Canada)
+
+- name: Notion for Nonprofits
+  category: Productivity
+  deal: 50% off Plus plan
+  icon: book
+  url: https://www.notion.com/nonprofits
+  description: >-
+    Docs, wikis, databases and project tracking in one place. Eligible
+    nonprofits get 50% off the Plus plan.
+  eligibility: Registered nonprofits
+
+- name: Figma Professional
+  category: Design
+  deal: Free upgrade
+  icon: code
+  url: https://www.figma.com/nonprofits/
+  description: >-
+    Free Figma Professional for verified nonprofits — useful if a volunteer
+    designer helps with your website, print or social assets.
+  eligibility: Registered nonprofits

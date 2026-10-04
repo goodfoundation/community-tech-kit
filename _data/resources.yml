@@ -1,0 +1,24 @@
+# Resource tracks surfaced on the home page and guides index.
+- name: Software deals
+  icon: gift
+  blurb: >-
+    Free and discounted software that community organizations actually
+    qualify for, with notes on eligibility and how to claim each offer.
+  link: /discounts/
+  link_label: Browse the directory
+
+- name: Accounting best practices
+  icon: wallet
+  blurb: >-
+    Set up your books the right way from day one — chart of accounts,
+    fund tracking, reconciliations and the controls small teams can keep.
+  link: /guides/accounting-setup-best-practices/
+  link_label: Read the guide
+
+- name: QuickBooks automation
+  icon: gears
+  blurb: >-
+    Stop re-typing bank transactions. Rules, recurring entries, bank feeds
+    and scripts that keep QuickBooks in shape with minutes a week.
+  link: /guides/quickbooks-automation/
+  link_label: Read the guide
